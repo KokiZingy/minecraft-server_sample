@@ -1,1 +1,35 @@
-
+{
+    "format_version": 1,
+    "header": {
+        "description": "Let's play Seichi Server!",
+        "name": "§l§dSeichi §bServer §aAddon §ev2",
+        "uuid": "79a98b15-f6ea-4dc3-ac69-bd1c48621155",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "description": "説明（ご自由に入力してください）",
+            "type": "data",
+            "uuid": "UUID（動画内で説明しています）",
+            "version": [0, 0, 1]
+        },
+        {
+            "description": "説明（ご自由に入力してください）",
+            "type": "script",
+            "uuid": "2つ目のUUID（動画内で説明しています）",
+            "language": "javascript",
+            "version": [0, 0, 1],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.1.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.0.0-beta"
+        }
+    ]
+}
