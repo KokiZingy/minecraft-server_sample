@@ -8,7 +8,7 @@ world.events.beforeChat.subscribe(eventData => {
     if (message == `lobby`) {
         sender.runCommandAsync('tp @s 0 40 0')
         sender.tell('§aロビーにテレポートしました')
-        eventData.cancel = true
+        eventData.cancel = true //プレイヤーが送信したメッセージを消す
         return;
     } else if (message == `hello`) {
         sender.tell('Hello World!')
